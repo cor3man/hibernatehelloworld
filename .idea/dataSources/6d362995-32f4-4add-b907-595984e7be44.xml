@@ -1110,88 +1110,110 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="279" parent="2" name="address"/>
-    <table id="280" parent="2" name="addressbi"/>
+    <table id="279" parent="2" name="bid"/>
+    <table id="280" parent="2" name="bidbag"/>
     <table id="281" parent="2" name="hibernate_sequence"/>
-    <table id="282" parent="2" name="user"/>
-    <table id="283" parent="2" name="userbi"/>
+    <table id="282" parent="2" name="item"/>
+    <table id="283" parent="2" name="itembag"/>
     <column id="284" parent="279" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="279" name="street">
+    <column id="285" parent="279" name="amount">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="286" parent="279" name="PRIMARY">
+    <column id="286" parent="279" name="Item_id">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="287" parent="279" name="FKf3snw2biygxffs9ru3fi4fbjb">
+      <ColNames>Item_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="288" parent="279" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="287" parent="280" name="id">
+    <foreign-key id="289" parent="279" name="FKf3snw2biygxffs9ru3fi4fbjb">
+      <ColNames>Item_id</ColNames>
+      <RefSchemaName>hwdb</RefSchemaName>
+      <RefTableName>item</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="290" parent="280" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="280" name="street">
+    <column id="291" parent="280" name="amount">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="289" parent="280" name="PRIMARY">
+    <column id="292" parent="280" name="Item_id">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="293" parent="280" name="FKpk4co7rvhvjtoqr8fbow573y3">
+      <ColNames>Item_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="294" parent="280" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="290" parent="280" name="FK6xvxtmsxnhwiclhgqb4f7c6t">
-      <ColNames>id</ColNames>
+    <foreign-key id="295" parent="280" name="FKpk4co7rvhvjtoqr8fbow573y3">
+      <ColNames>Item_id</ColNames>
       <RefSchemaName>hwdb</RefSchemaName>
-      <RefTableName>userbi</RefTableName>
+      <RefTableName>itembag</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="291" parent="281" name="next_val">
+    <column id="296" parent="281" name="next_val">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="292" parent="282" name="id">
+    <column id="297" parent="282" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="293" parent="282" name="userName">
+    <column id="298" parent="282" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="294" parent="282" name="PRIMARY">
+    <key id="299" parent="282" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="295" parent="282" name="FK5sra0gqx5jpad8o7jsusigt9t">
-      <ColNames>id</ColNames>
-      <RefSchemaName>hwdb</RefSchemaName>
-      <RefTableName>address</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="296" parent="283" name="id">
+    <column id="300" parent="283" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="283" name="userName">
+    <column id="301" parent="283" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="298" parent="283" name="PRIMARY">
+    <key id="302" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

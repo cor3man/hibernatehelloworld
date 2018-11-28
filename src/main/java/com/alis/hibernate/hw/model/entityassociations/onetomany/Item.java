@@ -1,4 +1,4 @@
-package com.alis.hibernate.hw.model.entityassociations;
+package com.alis.hibernate.hw.model.entityassociations.onetomany;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -21,9 +21,13 @@ public class Item {
     @NotNull
     private String name;
 
+
+    //TODO: comment it and getters and setters to test uniDirectional
     @OneToMany(mappedBy = "item",
             fetch = FetchType.LAZY,
-            cascade = {CascadeType.PERSIST, /*CascadeType.REMOVE*/},
+            cascade = {CascadeType.PERSIST,
+                    CascadeType.REMOVE
+            },
             orphanRemoval = true)
     private Set<Bid> bids = new HashSet<>();
 

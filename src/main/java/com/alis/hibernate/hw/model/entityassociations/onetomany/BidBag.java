@@ -1,4 +1,4 @@
-package com.alis.hibernate.hw.model.entityassociations;
+package com.alis.hibernate.hw.model.entityassociations.onetomany;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -9,7 +9,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Bid {
+public class BidBag {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -17,26 +17,26 @@ public class Bid {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "Item_id", nullable = false)
-    private Item item;
+    private ItemBag item;
 
     private int amount;
 
-    public Bid()
+    public BidBag()
     {
     }
 
-    public Bid(Item item, int amount)
+    public BidBag(ItemBag item, int amount)
     {
         this.item = item;
         this.amount = amount;
     }
 
-    public void setItem(Item item)
+    public void setItem(ItemBag item)
     {
         this.item = item;
     }
 
-    public Item getItem()
+    public ItemBag getItem()
     {
         return item;
     }

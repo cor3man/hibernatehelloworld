@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8236c3bd-8e35-497a-be68-07c86187776f" name="Default" comment="" />
+    <list default="true" id="8236c3bd-8e35-497a-be68-07c86187776f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/BidBag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d362995-32f4-4add-b907-595984e7be44.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d362995-32f4-4add-b907-595984e7be44.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/Bid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/Bid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/ItemBag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/test/EntityAssociations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/test/EntityAssociations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alis/hibernate/hw/model/entityassociations/Bid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alis/hibernate/hw/model/entityassociations/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alis/hibernate/hw/test/EntityAssociations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alis/hibernate/hw/test/EntityAssociations.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +62,8 @@
       <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+            <state relative-caret-position="102">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -58,8 +71,8 @@
       <file leaf-file-name="EntityAssociations.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/test/EntityAssociations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="57" selection-start-line="57" selection-end-line="57" selection-end-column="24" />
+            <state relative-caret-position="340">
+              <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,90 +80,78 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Address.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/Address.java">
+      <file leaf-file-name="bid" pinned="false" current-in-tab="false">
+        <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/bid">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bidbag" pinned="false" current-in-tab="false">
+        <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/bidbag">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="itembag" pinned="false" current-in-tab="false">
+        <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/itembag">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BidBag.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/BidBag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="255">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemBag.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/ItemBag.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#494#495#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#571#572#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/User.java">
+      <file leaf-file-name="Bid.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/Bid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="282">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#710#711#0" expanded="true" />
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#858#859#0" expanded="true" />
-                <element signature="e#896#897#0" expanded="true" />
-                <element signature="e#935#936#0" expanded="true" />
-                <element signature="e#966#967#0" expanded="true" />
-                <element signature="e#1018#1019#0" expanded="true" />
-                <element signature="e#1058#1059#0" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserBi.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/UserBi.java">
+      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-              <folding>
-                <element signature="e#623#624#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#757#758#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-                <element signature="e#856#857#0" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
-                <element signature="e#947#948#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1017#1018#0" expanded="true" />
-                <element signature="e#1069#1070#0" expanded="true" />
-                <element signature="e#1109#1110#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddressBi.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/AddressBi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="408">
+              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#877#878#0" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
-                <element signature="e#1085#1086#0" expanded="true" />
-                <element signature="e#1129#1130#0" expanded="true" />
-                <element signature="e#1161#1162#0" expanded="true" />
-                <element signature="e#1198#1199#0" expanded="true" />
-                <element signature="e#1227#1228#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
-                <element signature="e#1311#1312#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1035#1036#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,6 +174,9 @@
     <replaceStrings>
       <replace>&amp;amp;</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -216,12 +220,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/mappingcollections/Images.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/Bid.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/ItemHost.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/AddressBi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/UserBi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/Address.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/AddressBi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/BidBag.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/ItemBag.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/UserBi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/test/EntityAssociations.java" />
       </list>
     </option>
@@ -254,11 +261,12 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -325,7 +333,7 @@
               <item name="hw" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="entityassociations" type="462c0819:PsiDirectoryNode" />
-              <item name="onetoone" type="462c0819:PsiDirectoryNode" />
+              <item name="onetomany" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hibernatehelloworld" type="b2602c69:ProjectViewProjectNode" />
@@ -351,6 +359,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hibernatehelloworld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hibernatehelloworld" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -378,11 +394,11 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.alis.hibernate.hw.model.entityassociations.onetomany" />
       <recent name="com.alis.hibernate.hw.model.entityassociations.onetoone" />
       <recent name="com.alis.hibernate.hw.model.entityassociations" />
       <recent name="com.alis.hibernate.hw.test" />
       <recent name="com.alis.hibernate.hw.model.mappingcollections" />
-      <recent name="com.alis.hibernate.hw.model.helloworld" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Development\java\hibernate\hibernatehelloworld\src\main\resources" />
@@ -401,7 +417,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.EntityAssociations.testOneToOne">
+  <component name="RunManager" selected="TestNG.EntityAssociations.testOneToManyBag">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -420,35 +436,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-    </configuration>
-    <configuration name="EntityAssociations" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hibernatehelloworld" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.alis.hibernate.hw.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.alis.hibernate.hw.test" />
-      <option name="MAIN_CLASS_NAME" value="com.alis.hibernate.hw.test.EntityAssociations" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
     </configuration>
     <configuration name="EntityAssociations.testManyToOneBidirectional" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hibernatehelloworld" />
@@ -508,7 +495,36 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="EntityAssociations.testOneToOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EntityAssociations.testOneToManyBag" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hibernatehelloworld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alis.hibernate.hw.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.alis.hibernate.hw.test" />
+      <option name="MAIN_CLASS_NAME" value="com.alis.hibernate.hw.test.EntityAssociations" />
+      <option name="METHOD_NAME" value="testOneToManyBag" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="EntityAssociations.testOneToOne (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hibernatehelloworld" />
       <extension name="coverage">
         <pattern>
@@ -537,7 +553,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="EntityAssociations.twstOneToOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EntityAssociations.testOneToOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hibernatehelloworld" />
       <extension name="coverage">
         <pattern>
@@ -550,7 +566,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.alis.hibernate.hw.test" />
       <option name="MAIN_CLASS_NAME" value="com.alis.hibernate.hw.test.EntityAssociations" />
-      <option name="METHOD_NAME" value="twstOneToOne" />
+      <option name="METHOD_NAME" value="testOneToOne" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -589,19 +605,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.EntityAssociations" />
       <item itemvalue="TestNG.EntityAssociations.testManyToOneUnidirectional" />
       <item itemvalue="TestNG.EntityAssociations.testManyToOneBidirectional" />
-      <item itemvalue="TestNG.EntityAssociations.twstOneToOne" />
       <item itemvalue="TestNG.EntityAssociations.testOneToOne" />
+      <item itemvalue="TestNG.EntityAssociations.testOneToOne (1)" />
+      <item itemvalue="TestNG.EntityAssociations.testOneToManyBag" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.EntityAssociations.testOneToOne" />
-        <item itemvalue="TestNG.EntityAssociations.twstOneToOne" />
-        <item itemvalue="TestNG.EntityAssociations.testManyToOneBidirectional" />
+        <item itemvalue="TestNG.EntityAssociations.testOneToManyBag" />
         <item itemvalue="TestNG.EntityAssociations.testManyToOneUnidirectional" />
-        <item itemvalue="TestNG.EntityAssociations" />
+        <item itemvalue="TestNG.EntityAssociations.testManyToOneBidirectional" />
+        <item itemvalue="TestNG.EntityAssociations.testOneToOne" />
+        <item itemvalue="TestNG.EntityAssociations.testOneToOne (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -623,44 +639,44 @@
       <workItem from="1531253150362" duration="1515000" />
       <workItem from="1531331320583" duration="43856000" />
       <workItem from="1534264692077" duration="38054000" />
-      <workItem from="1539980189538" duration="33360000" />
+      <workItem from="1539980189538" duration="44084000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EntityAssociations_twstOneToOne - 2018.11.08 at 20h 35m 54s.xml">
-      <configuration name="EntityAssociations.twstOneToOne" configurationId="TestNG" />
+    <history-entry file="EntityAssociations_testManyToOneBidirectional - 2018.11.27 at 21h 43m 10s.xml">
+      <configuration name="EntityAssociations.testManyToOneBidirectional" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EntityAssociations_twstOneToOne - 2018.11.08 at 20h 36m 51s.xml">
-      <configuration name="EntityAssociations.twstOneToOne" configurationId="TestNG" />
+    <history-entry file="EntityAssociations_testManyToOneUnidirectional - 2018.11.27 at 21h 52m 20s.xml">
+      <configuration name="EntityAssociations.testManyToOneUnidirectional" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EntityAssociations_twstOneToOne - 2018.11.08 at 20h 38m 55s.xml">
-      <configuration name="EntityAssociations.twstOneToOne" configurationId="TestNG" />
+    <history-entry file="EntityAssociations_testManyToOneUnidirectional - 2018.11.27 at 21h 52m 55s.xml">
+      <configuration name="EntityAssociations.testManyToOneUnidirectional" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EntityAssociations_twstOneToOne - 2018.11.08 at 20h 44m 41s.xml">
-      <configuration name="EntityAssociations.twstOneToOne" configurationId="TestNG" />
+    <history-entry file="EntityAssociations_testManyToOneUnidirectional - 2018.11.27 at 21h 53m 13s.xml">
+      <configuration name="EntityAssociations.testManyToOneUnidirectional" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EntityAssociations_twstOneToOne - 2018.11.08 at 20h 45m 03s.xml">
-      <configuration name="EntityAssociations.twstOneToOne" configurationId="TestNG" />
+    <history-entry file="EntityAssociations_testManyToOneUnidirectional - 2018.11.27 at 21h 56m 00s.xml">
+      <configuration name="EntityAssociations.testManyToOneUnidirectional" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EntityAssociations_twstOneToOne - 2018.11.08 at 20h 50m 21s.xml">
-      <configuration name="EntityAssociations.twstOneToOne" configurationId="TestNG" />
+    <history-entry file="EntityAssociations_testManyToOneUnidirectional - 2018.11.27 at 21h 56m 46s.xml">
+      <configuration name="EntityAssociations.testManyToOneUnidirectional" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EntityAssociations_twstOneToOne - 2018.11.08 at 21h 41m 22s.xml">
-      <configuration name="EntityAssociations.twstOneToOne" configurationId="TestNG" />
+    <history-entry file="EntityAssociations_testManyToOneUnidirectional - 2018.11.27 at 21h 58m 16s.xml">
+      <configuration name="EntityAssociations.testManyToOneUnidirectional" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EntityAssociations_twstOneToOne - 2018.11.08 at 21h 42m 13s.xml">
-      <configuration name="EntityAssociations.twstOneToOne" configurationId="TestNG" />
+    <history-entry file="EntityAssociations_testOneToManyBag - 2018.11.27 at 22h 14m 52s.xml">
+      <configuration name="EntityAssociations.testOneToManyBag" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EntityAssociations_testOneToOne - 2018.11.08 at 22h 03m 03s.xml">
-      <configuration name="EntityAssociations.testOneToOne" configurationId="TestNG" />
+    <history-entry file="EntityAssociations_testOneToManyBag - 2018.11.27 at 22h 16m 46s.xml">
+      <configuration name="EntityAssociations.testOneToManyBag" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EntityAssociations_testOneToOne - 2018.11.08 at 22h 03m 41s.xml">
-      <configuration name="EntityAssociations.testOneToOne" configurationId="TestNG" />
+    <history-entry file="EntityAssociations_testOneToManyBag - 2018.11.27 at 22h 19m 58s.xml">
+      <configuration name="EntityAssociations.testOneToManyBag" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118506000" />
+    <option name="totallyTimeSpent" value="129230000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -672,38 +688,38 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32570806" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info id="Image Layers" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="8" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32942432" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34422657" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32855567" />
       <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Database Console" order="11" weight="0.3278867" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7067545" visible="true" weight="0.2238806" />
-      <window_info anchor="right" id="Bean Validation" order="1" />
-      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.13113007" />
+      <window_info anchor="right" id="Database" order="0" weight="0.2506427" />
       <window_info id="Structure" order="6" sideWeight="0.29324546" weight="0.17803837" />
       <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34204793" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32384825" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42818427" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32855567" />
+      <window_info anchor="bottom" id="Database Console" order="11" weight="0.3278867" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7067545" visible="true" weight="0.26992288" />
+      <window_info anchor="right" id="Bean Validation" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="5" sideWeight="0.50271004" side_tool="true" weight="0.21079692" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3296582" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -732,41 +748,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/test/MappingInheritTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="42" column="62" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/HashSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1038">
-          <caret line="104" column="11" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
-          <folding>
-            <element signature="e#3740#3741#0" expanded="true" />
-            <element signature="e#3777#3778#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/mappingcollections/Item_nested_set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/shared/MyNamingStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -795,13 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/itembag">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -987,45 +961,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/Item.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.0.Final/hibernate-core-5.0.0.Final-sources.jar!/org/hibernate/annotations/Parameter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/bid">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/Bid.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.0.Final/hibernate-core-5.0.0.Final-sources.jar!/org/hibernate/annotations/GenericGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/item">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/addressbi.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/user.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/address.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1043,64 +1010,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.0.Final/hibernate-core-5.0.0.Final-sources.jar!/org/hibernate/annotations/Parameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.0.Final/hibernate-core-5.0.0.Final-sources.jar!/org/hibernate/annotations/GenericGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/UserBi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="170">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#648#649#0" expanded="true" />
@@ -1119,28 +1032,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/userbi">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/UserBi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/addressbi.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/Address.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        <state relative-caret-position="510">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetoone/AddressBi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="275">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#877#878#0" expanded="true" />
             <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
             <element signature="e#1085#1086#0" expanded="true" />
             <element signature="e#1129#1130#0" expanded="true" />
             <element signature="e#1161#1162#0" expanded="true" />
@@ -1152,28 +1092,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/user.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/address.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/addressbi">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/userbi">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/bid.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/item">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1187,10 +1127,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/Bid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/BidBag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/model/entityassociations/onetomany/ItemBag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+          <folding>
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/itembag">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/bid">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d362995-32f4-4add-b907-595984e7be44/schema/hwdb/table/bidbag">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alis/hibernate/hw/test/EntityAssociations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="57" selection-start-line="57" selection-end-line="57" selection-end-column="24" />
+        <state relative-caret-position="340">
+          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

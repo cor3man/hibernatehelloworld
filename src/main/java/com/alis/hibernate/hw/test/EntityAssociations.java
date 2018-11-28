@@ -1,14 +1,12 @@
 package com.alis.hibernate.hw.test;
 
 import com.alis.hibernate.hw.environment.TransactionManagerTest;
-import com.alis.hibernate.hw.model.entityassociations.Bid;
-import com.alis.hibernate.hw.model.entityassociations.Item;
-import com.alis.hibernate.hw.model.entityassociations.onetoone.Address;
+import com.alis.hibernate.hw.model.entityassociations.onetomany.Bid;
+import com.alis.hibernate.hw.model.entityassociations.onetomany.BidBag;
+import com.alis.hibernate.hw.model.entityassociations.onetomany.Item;
+import com.alis.hibernate.hw.model.entityassociations.onetomany.ItemBag;
 import com.alis.hibernate.hw.model.entityassociations.onetoone.AddressBi;
-import com.alis.hibernate.hw.model.entityassociations.onetoone.User;
 import com.alis.hibernate.hw.model.entityassociations.onetoone.UserBi;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.tool.hbm2ddl.SchemaExport;
 import org.testng.annotations.Test;
 
 import javax.persistence.EntityManager;
@@ -33,6 +31,45 @@ public class EntityAssociations extends TransactionManagerTest {
         em = emf.createEntityManager();
     }
 
+
+    @Test
+    public void testOneToManyBag() throws Exception
+    {
+        try
+        {
+            prepareTestEnv("ManyToOnePU");
+
+            ItemBag item = new ItemBag("MyItem");
+            em.persist(item);
+
+            BidBag bid = new BidBag(item, 777);
+
+            item.getBids().add(bid);
+            item.getBids().add(bid);
+            em.persist(bid);
+
+            tx.commit();
+            em.clear();
+            tx.begin();
+
+            ItemBag itemBag = (ItemBag)em.find(ItemBag.class, 1);
+
+            BidBag bid1 = new BidBag(item, 123);
+            itemBag.getBids().add(bid1);
+            em.persist(bid1);
+            tx.commit();
+
+
+
+
+        }
+        finally
+        {
+            //TM.rollback();
+            emf.close();
+        }
+    }
+
     @Test
     public void testOneToOne() throws Exception
     {
@@ -42,6 +79,7 @@ public class EntityAssociations extends TransactionManagerTest {
 
             //Sharing a primary key
 
+/*
             System.out.println("---------------------Sharing a primary key-----------------------");
             Address address = new Address("MyStreet");
             em.persist(address);
@@ -49,11 +87,30 @@ public class EntityAssociations extends TransactionManagerTest {
             user.setAddress(address);
             em.persist(user);
 
+            tx.commit();
+
+            em.clear();
+            tx.begin();
+
+            User user1 = em.find(User.class, 1);
+
+            System.out.println(user1);
+            System.out.println(user1.getAddress());
+*/
+
             System.out.println("---------------------The foreign primary key generator-----------------------");
             UserBi userBi = new UserBi("UserBi");
             AddressBi addressBi = new AddressBi(userBi, "street123");
             userBi.setAddress(addressBi);
             em.persist(userBi);
+            tx.commit();
+            em.clear();
+            tx.begin();
+
+            //UserBi userBi1 = em.find(UserBi.class, 1);
+            AddressBi addressBi1 = em.find(AddressBi.class, 1);
+
+            System.out.println(addressBi1.getUser());
 
             tx.commit();
 
@@ -65,23 +122,21 @@ public class EntityAssociations extends TransactionManagerTest {
         }
     }
 
-    @Test//before running this test remove/comment OneToMany annotation from Item
+
+
+    @Test//TODO: before running this test read comment on Item
     public void testManyToOneUnidirectional() throws Exception
     {
         try
         {
-
             prepareTestEnv("ManyToOnePU");
-
             Item item = new Item("MyItem");
-            Bid bid = new Bid(item, 777);
-            //bid.setItem(item);
-
             em.persist(item);
+            Bid bid = new Bid(item, 777);
+            bid.setItem(item);
+
             em.persist(bid);
-
             tx.commit();
-
         }
         finally
         {
@@ -90,12 +145,11 @@ public class EntityAssociations extends TransactionManagerTest {
         }
     }
 
-    @Test//before running this test add/uncomment OneToMany annotation to Item
+    @Test
     public void testManyToOneBidirectional() throws Exception
     {
         try
         {
-
             prepareTestEnv("ManyToOnePU");
 
             Item item = new Item("MyItem");
@@ -115,10 +169,11 @@ public class EntityAssociations extends TransactionManagerTest {
             tx.begin();
 
             item = em.find(Item.class, 1);
-            System.out.println(item);
+            //System.out.println(item);
 
-            Bid firstBid = item.getBids().iterator().next();
-            item.getBids().remove(firstBid);
+            Bid bid1 = new Bid(item, 777);
+            item.getBids().add(bid1);
+            em.persist(bid1);
 
             //em.remove(item);
 
