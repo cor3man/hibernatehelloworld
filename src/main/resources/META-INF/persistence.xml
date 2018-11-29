@@ -5,6 +5,29 @@
         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
 http://xmlns.jcp.org/xml/ns/persistence_2_1.xsd">
 
+    <persistence-unit name="TestPU">
+
+        <jta-data-source>myDS</jta-data-source>
+        <class>com.alis.hibernate.hw.model.entityassociations.onetomany.testclases.Shipment</class>
+        <class>com.alis.hibernate.hw.model.entityassociations.onetomany.testclases.User</class>
+        <class>com.alis.hibernate.hw.model.entityassociations.onetomany.testclases.Address</class>
+        <class>com.alis.hibernate.hw.model</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="root" />
+            <property
+                    name="javax.persistence.schema-generation.database.action"
+                    value="drop-and-create"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.use_sql_comments" value="true"/>
+            <property name="hibernate.archive.autodetection" value="none"/>
+
+        </properties>
+    </persistence-unit>
+
     <persistence-unit name="OneToOnePU">
 
         <jta-data-source>myDS</jta-data-source>
@@ -35,8 +58,13 @@ http://xmlns.jcp.org/xml/ns/persistence_2_1.xsd">
         <jta-data-source>myDS</jta-data-source>
         <class>com.alis.hibernate.hw.model.entityassociations.onetomany.Item</class>
         <class>com.alis.hibernate.hw.model.entityassociations.onetomany.ItemBag</class>
+        <class>com.alis.hibernate.hw.model.entityassociations.onetomany.jointable.Item</class>
+        <class>com.alis.hibernate.hw.model.entityassociations.onetomany.jointable.User</class>
         <class>com.alis.hibernate.hw.model.entityassociations.onetomany.Bid</class>
         <class>com.alis.hibernate.hw.model.entityassociations.onetomany.BidBag</class>
+        <class>com.alis.hibernate.hw.model.entityassociations.onetomany.BidList</class>
+        <class>com.alis.hibernate.hw.model.entityassociations.onetomany.BidListSimple</class>
+        <class>com.alis.hibernate.hw.model.entityassociations.onetomany.ItemList</class>
         <class>com.alis.hibernate.hw.model</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 

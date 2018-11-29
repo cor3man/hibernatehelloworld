@@ -3,8 +3,10 @@ package com.alis.hibernate.hw.test;
 import com.alis.hibernate.hw.environment.TransactionManagerTest;
 import com.alis.hibernate.hw.model.entityassociations.onetomany.Bid;
 import com.alis.hibernate.hw.model.entityassociations.onetomany.BidBag;
+import com.alis.hibernate.hw.model.entityassociations.onetomany.BidListSimple;
 import com.alis.hibernate.hw.model.entityassociations.onetomany.Item;
 import com.alis.hibernate.hw.model.entityassociations.onetomany.ItemBag;
+import com.alis.hibernate.hw.model.entityassociations.onetomany.ItemList;
 import com.alis.hibernate.hw.model.entityassociations.onetoone.AddressBi;
 import com.alis.hibernate.hw.model.entityassociations.onetoone.UserBi;
 import org.testng.annotations.Test;
@@ -30,6 +32,88 @@ public class EntityAssociations extends TransactionManagerTest {
         tx.begin();
         em = emf.createEntityManager();
     }
+
+    @Test
+    public void testOneToManyJoinTable() throws Exception
+    {
+        try
+        {
+            prepareTestEnv("ManyToOnePU");
+
+            com.alis.hibernate.hw.model.entityassociations.onetomany.jointable.Item item = new com.alis.hibernate.hw.model.entityassociations.onetomany.jointable.Item();
+            item.setName("Item");
+            em.persist(item);
+
+
+            com.alis.hibernate.hw.model.entityassociations.onetomany.jointable.User user = new com.alis.hibernate.hw.model.entityassociations.onetomany.jointable.User();
+            user.setName("User1");
+
+            em.persist(user);
+
+
+
+            //item.setBuyer(user);
+
+
+            tx.commit();
+            em.clear();
+            tx.begin();
+
+
+            item = (com.alis.hibernate.hw.model.entityassociations.onetomany.jointable.Item) em.find(com.alis.hibernate.hw.model.entityassociations.onetomany.jointable.Item.class, 1);
+
+            System.out.println("********************************");
+            System.out.println(item.getBuyer());
+
+            /*
+            user = (com.alis.hibernate.hw.model.entityassociations.onetomany.jointable.User)em.find(com.alis.hibernate.hw.model.entityassociations.onetomany.jointable.User.class, 2);
+
+            System.out.println(user.getBoughtItems());
+*/
+
+            tx.commit();
+
+        }
+        finally
+        {
+            //TM.rollback();
+            emf.close();
+        }
+    }
+
+
+    @Test
+    public void testOneToManyListUni() throws Exception
+    {
+        try
+        {
+            prepareTestEnv("ManyToOnePU");
+
+
+            ItemList itemList = new ItemList("ItemList");
+            em.persist(itemList);
+/*
+            tx.commit();
+            em.clear();
+            tx.begin();
+
+            itemList = (ItemList)em.find(ItemList.class, 1);
+*/
+
+            BidListSimple bidListSimple = new BidListSimple(234);
+            itemList.getBids().add(bidListSimple);
+
+            em.persist(bidListSimple);
+            tx.commit();
+
+        }
+        finally
+        {
+            //TM.rollback();
+            emf.close();
+        }
+    }
+
 
 
     @Test
@@ -58,10 +142,6 @@ public class EntityAssociations extends TransactionManagerTest {
             itemBag.getBids().add(bid1);
             em.persist(bid1);
             tx.commit();
-
-
-
-
         }
         finally
         {

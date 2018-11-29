@@ -1,9 +1,5 @@
 package com.alis.hibernate.hw.model;
 
-import com.alis.hibernate.hw.shared.MapAsSer;
-
-import javax.persistence.Access;
-import javax.persistence.AccessType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -11,7 +7,7 @@ import javax.persistence.Lob;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Users")
+@Table(name = "User")
 public class User {
     @Id
     @GeneratedValue(generator = Constants.ID_GENERATOR)
